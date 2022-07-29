@@ -1,0 +1,1718 @@
+.method {
+    background-image: url(../img/physiology_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &__img1 {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 6;
+    }
+    &__img2 {
+        position: absolute;
+        top: 75px;
+        right: 45px;
+        z-index: 5;
+    }
+    &__img3 {
+        position: absolute;
+        top: 30px;
+        left: -300px;
+    }
+    &__inner {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        z-index: 3;
+    }
+    &__title {
+        color: #ffffff;
+        margin-top: 15px;
+    }
+    &__left {
+        padding: 30px;
+        width: 900px;
+        margin-left: auto;
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        &-title {
+            border-bottom: 2px solid #00dfff;
+            padding-bottom: 30px;
+            max-width: 500px;
+        }
+    }
+    &__right {
+        padding: 100px 0 30px 60px;
+        position: relative;
+        z-index: 3;
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 7;
+            top: 0;
+            right: -3000px;
+            width: calc(100% + 3000px);
+            height: 100%;
+            background-image: url(../img/method-_1_.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -3000px;
+            width: calc(100% + 3000px);
+            height: 100%;
+            background-color: rgba(220, 225, 232, 1);
+        }
+        &-content {
+            position: relative;
+            z-index: 15;
+        }
+        &-title {
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 500;
+            color: #00aeef;
+            margin-bottom: 30px;
+        }
+    }
+    &__oxygen-items {
+        max-width: 150px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            width: 19px;
+            height: 100%;
+            transform: translateX(-50%);
+            background: linear-gradient(0.0deg, #51d5ee 0%, #e8ff00 100%);
+            box-shadow: inset 0px 1px 8px 0px rgba(0, 0, 0, 0.34);
+            border-radius: 5px;
+        }
+    }
+    &__oxygen-item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #00aeef;
+        font-size: 18px;
+        line-height: 64px;
+        font-weight: 500;
+        position: relative;
+        z-index: 2;
+        span:nth-child(1) {
+            margin-right: 50px;
+        }
+    }
+    &__desc {
+        margin-top: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.new-methods {
+    position: relative;
+    padding: 80px 0 50px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/info_bg.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+    }
+    &__img1 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    &__img2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    &__arrow {
+        &::after {
+            content: 'Нобелевская премия 2019 года';
+            position: absolute;
+            z-index: 10;
+            bottom: 57px;
+            right: 400px;
+            font-family: Ubuntu;
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 700;
+            font-style: italic;
+            color: #ffffff;
+        }
+        img {
+            position: absolute;
+            z-index: 4;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__nobel {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        bottom: -100px;
+    }
+    &__inner {
+        &-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            position: relative;
+            z-index: 4;
+        }
+    }
+    &__left {
+        position: relative;
+    }
+    &__right {
+        position: relative;
+        background-color: #ffffff;
+        padding: 30px 0 30px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-content {
+            position: relative;
+            z-index: 2;
+            max-width: 565px;
+        }
+    }
+    &__img {
+        max-width: 765px;
+        margin-left: auto;
+        position: relative;
+        height: 100%;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: calc(100% - 10px);
+            height: calc(100% + 30px);
+            -webkit-transform: skewX(-5deg);
+            -ms-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+            border: 1px solid #00aeef;
+            left: 0px;
+            top: -15px;
+            border-radius: 5px;
+            -webkit-transition: 0.225s;
+            -o-transition: 0.225s;
+            transition: 0.225s;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title {
+        position: relative;
+        padding-bottom: 50px;
+        span {
+            color: #00aeef;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: calc(100% - 30%);
+            height: 2px;
+            background-color: #00aeef;
+        }
+    }
+    &__desc {
+        margin-top: 50px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__wada {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+        &-inner {
+            position: relative;
+            z-index: 5;
+            box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.12);
+            padding: 20px 60px 20px 20px;
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                width: calc(100% - 10px);
+                height: calc(100% + 30px);
+                -webkit-transform: skewX(-5deg);
+                -ms-transform: skewX(-5deg);
+                transform: skewX(-10deg);
+                border: 1px solid #00aeef;
+                left: 0px;
+                top: -15px;
+                border-radius: 5px;
+                -webkit-transition: 0.225s;
+                -o-transition: 0.225s;
+                transition: 0.225s;
+            }
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 700;
+            span {
+                color: #ff0066;
+            }
+        }
+        &-desc {
+            display: flex;
+            align-items: center;
+            margin-top: 7px;
+        }
+        &-text {
+            max-width: 205px;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 700;
+            margin-left: 7px;
+        }
+    }
+    &__bottom {
+        margin-top: 60px;
+        position: relative;
+        z-index: 4;
+        &-title {
+            font-size: 36.6px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #ffffff;
+            span {
+                color: #ff0066;
+            }
+        }
+    }
+}
+
+.physiology {
+    position: relative;
+    padding: 30px 0;
+    background-image: url(../img/physiology-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180.0deg, #addbf1 0%, #e6e6e6 100%);
+        opacity: 0.7;
+    }
+    &__inner {
+        position: relative;
+        z-index: 4;
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 700;
+        font-style: italic;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__item {
+        background-color: #ffffff;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+        width: 285px;
+        &:not(:last-child) {
+            margin-right: 70px;
+        }
+        &-img {
+            img {
+                width: 100%;
+            }
+        }
+        &-desc {
+            margin-top: 20px;
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 120%;
+            color: #12bbeb;
+            padding-bottom: 15px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                width: calc(100% - 60px);
+                height: 1px;
+                border-bottom: 1px solid #bababa;
+            }
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 150%;
+            margin-top: 20px;
+        }
+    }
+    &__link {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 700;
+        font-style: italic;
+        color: #ff0066;
+        margin-top: 30px;
+        text-align: center;
+        a {
+            font-size: 22px;
+            line-height: 120%;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: underline;
+            color: #000000;
+        }
+    }
+}
+
+.workout {
+    background-image: url(../img/physiology-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #222931;
+        opacity: 0.8;
+    }
+    &__img1 {
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        left: 0;
+    }
+    &__img2 {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: 290px;
+    }
+    &__img3 {
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        right: -250px;
+    }
+    &__img4 {
+        position: absolute;
+        z-index: 3;
+        top: 600px;
+        right: 0px;
+        z-index: 2;
+    }
+    &__img5 {
+        position: absolute;
+        z-index: 2;
+        top: 800px;
+        right: 0px;
+    }
+    &__img6 {
+        position: absolute;
+        z-index: 2;
+        right: 0px;
+        bottom: 10px;
+    }
+    &__inner {
+        position: relative;
+        z-index: 5;
+    }
+    &__title {
+        color: #ffffff;
+        max-width: 620px;
+        span {
+            color: #00aeef;
+        }
+    }
+    &__desc {
+        background-color: #ffffff;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        margin-top: 40px;
+        padding: 30px 50px;
+        &-top {
+            border-bottom: 2px solid #00dfff;
+            padding-bottom: 30px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__nav {
+        margin-top: 30px;
+        border-bottom: 2px solid #00dfff;
+        padding-bottom: 30px;
+        &-title {
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+    &__list {
+        margin-top: 50px;
+        li {
+            font-size: 24px;
+            line-height: 1.2;
+            padding-left: 60px;
+            position: relative;
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 11px;
+                height: 11px;
+                background-color: #5fd9ef;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__desc-bottom {
+        margin-top: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
+    &__title-two {
+        color: #ffffff;
+        text-align: end;
+        margin-top: 30px;
+        span {
+            color: #ff0066;
+        }
+    }
+}
+
+.athletics {
+    padding: 50px 0 0;
+    background: linear-gradient(180.0deg, #addbf1 100%, #e6e6e6 0%);
+    position: relative;
+    &__img-absolute {
+        position: absolute;
+        z-index: 5;
+        top: 140px;
+        left: 0;
+    }
+    &__title {
+        color: #00aeef;
+    }
+    &__content {
+        padding: 30px;
+        margin-top: 45px;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        position: relative;
+        background-color: #ffffff;
+        &::after {
+            content: '';
+            position: absolute;
+            left: -10000px;
+            top: 0;
+            width: calc(100% + 10000px);
+            height: 100%;
+            background-color: #ffffff;
+        }
+        &-top {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+        &-bottom {
+            position: relative;
+            z-index: 2;
+        }
+        &-right {
+            width: 525px;
+            margin-left: 25px;
+        }
+        &-left {
+            width: calc(100% - 550px);
+        }
+        &-img {
+            position: relative;
+            .athletics__img {
+                width: 100%;
+            }
+            .athletics__number {
+                position: absolute;
+                left: -15px;
+                top: -25px;
+            }
+        }
+    }
+    &__desc {
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                font-weight: 700;
+                font-style: italic;
+                margin-top: 15px;
+            }
+        }
+    }
+    &__content-bottom {
+        margin-top: 30px;
+    }
+    &__bottom-desc {
+        padding-bottom: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
+    &__literature {
+        padding-top: 30px;
+        border-top: 2px solid #00dfff;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+.all-around {
+    padding: 50px 0 0;
+    background: linear-gradient(180.0deg, #addbf1 100%, #e6e6e6 0%);
+    position: relative;
+    z-index: 7;
+    &__img-absolute {
+        position: absolute;
+        z-index: 5;
+        top: 140px;
+        left: 0;
+    }
+    &__img-absolute2 {
+        position: absolute;
+        z-index: 11;
+        right: 0;
+        top: -100px;
+        transform: rotate(180deg);
+    }
+    &__img-absolute2 {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        bottom: -100px;
+        transform: rotate(180deg);
+    }
+    &__title {
+        color: #00aeef;
+    }
+    &__content {
+        padding: 30px;
+        margin-top: 45px;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        position: relative;
+        background-color: #ffffff;
+        &::after {
+            content: '';
+            position: absolute;
+            right: -10000px;
+            top: 0;
+            width: calc(100% + 10000px);
+            height: 100%;
+            background-color: #ffffff;
+        }
+        &-top {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+        &-bottom {
+            position: relative;
+            z-index: 2;
+        }
+        &-right {
+            width: 525px;
+            margin-left: 25px;
+        }
+        &-left {
+            width: calc(100% - 550px);
+        }
+        &-img {
+            position: relative;
+            .all-around__img {
+                width: 100%;
+            }
+            .all-around__number {
+                position: absolute;
+                left: -15px;
+                top: -25px;
+            }
+        }
+    }
+    &__desc {
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                font-weight: 700;
+                font-style: italic;
+                margin-top: 15px;
+            }
+        }
+    }
+    &__content-bottom {
+        margin-top: 30px;
+    }
+    &__bottom-desc {
+        padding-bottom: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
+    &__literature {
+        font-size: 18px;
+        line-height: 1.2;
+        padding-top: 30px;
+        border-top: 2px solid #00dfff;
+    }
+}
+
+.swimming {
+    padding: 50px 0 0;
+    background: linear-gradient(180.0deg, #addbf1 100%, #e6e6e6 0%);
+    position: relative;
+    &__img-absolute {
+        position: absolute;
+        z-index: 5;
+        top: 140px;
+        left: -87px;
+        transform: rotate(180deg);
+    }
+    &__img-absolute2 {
+        position: absolute;
+        z-index: 5;
+        right: 175px;
+        top: -200px;
+    }
+    &__img-absolute3 {
+        position: absolute;
+        z-index: 6;
+        right: 0;
+        bottom: 160px;
+    }
+    &__img-absolute4 {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        bottom: -65px;
+    }
+    &__title {
+        color: #00aeef;
+    }
+    &__content {
+        padding: 30px;
+        margin-top: 45px;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        position: relative;
+        background-color: #ffffff;
+        &::after {
+            content: '';
+            position: absolute;
+            left: -10000px;
+            top: 0;
+            width: calc(100% + 10000px);
+            height: 100%;
+            background-color: #ffffff;
+        }
+        &-top {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+        &-bottom {
+            position: relative;
+            z-index: 2;
+        }
+        &-right {
+            width: 525px;
+            margin-left: 25px;
+        }
+        &-left {
+            width: calc(100% - 550px);
+        }
+        &-img {
+            position: relative;
+            .swimming__img {
+                width: 100%;
+            }
+            .swimming__number {
+                position: absolute;
+                left: -15px;
+                top: -25px;
+            }
+            .swimming__img2 {
+                position: absolute;
+                left: 0;
+                bottom: 45px;
+            }
+        }
+    }
+    &__desc {
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
+    &__content-bottom {
+        margin-top: 30px;
+    }
+    &__bottom-desc {
+        padding-bottom: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+        }
+    }
+    &__bottom-text--bold {
+        font-weight: 700;
+        font-style: italic;
+    }
+    &__literature {
+        font-size: 18px;
+        line-height: 1.2;
+        padding-top: 30px;
+        border-top: 2px solid #00dfff;
+    }
+}
+
+.mountaineering {
+    padding: 50px 0 0;
+    background: linear-gradient(180.0deg, #addbf1 100%, #e6e6e6 0%);
+    position: relative;
+    &__img-absolute {
+        position: absolute;
+        z-index: 5;
+        top: 140px;
+        left: 0;
+    }
+    &__img-absolute2 {
+        position: absolute;
+        z-index: 5;
+        top: 540px;
+        left: 60px;
+        transform: rotate(180deg);
+    }
+    &__img-absolute3 {
+        position: absolute;
+        z-index: 5;
+        top: 675px;
+        left: 60px;
+        transform: rotate(180deg);
+    }
+    &__title {
+        color: #00aeef;
+    }
+    &__content {
+        padding: 30px;
+        margin-top: 45px;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        position: relative;
+        background-color: #ffffff;
+        &::after {
+            content: '';
+            position: absolute;
+            right: -10000px;
+            top: 0;
+            width: calc(100% + 10000px);
+            height: 100%;
+            background-color: #ffffff;
+        }
+        &-top {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+        &-bottom {
+            position: relative;
+            z-index: 2;
+        }
+        &-right {
+            width: 525px;
+            margin-left: 25px;
+        }
+        &-left {
+            width: calc(100% - 550px);
+        }
+        &-img {
+            position: relative;
+            .mountaineering__img {
+                width: 100%;
+            }
+            .mountaineering__img2 {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .mountaineering__number {
+                position: absolute;
+                left: -15px;
+                top: -25px;
+            }
+        }
+    }
+    &__desc {
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                font-weight: 700;
+                font-style: italic;
+                margin-top: 15px;
+            }
+        }
+    }
+    &__content-bottom {
+        margin-top: 30px;
+    }
+    &__bottom-desc {
+        padding-bottom: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+        }
+    }
+    &__bottom-text--bold {
+        font-weight: 700;
+        font-style: italic;
+    }
+    &__nav {
+        padding-bottom: 30px;
+        &-title {
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 700;
+            font-style: italic;
+        }
+    }
+    &__list {
+        margin-top: 30px;
+        li {
+            font-size: 24px;
+            line-height: 1.2;
+            padding-left: 35px;
+            position: relative;
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width: 11px;
+                height: 11px;
+                background-color: #5fd9ef;
+                border-radius: 5px;
+            }
+        }
+    }
+    &__literature {
+        padding-top: 30px;
+        border-top: 2px solid #00dfff;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+.skiing {
+    padding: 50px 0 30px;
+    background: linear-gradient(180.0deg, #addbf1 0%, #e6e6e6 100%);
+    position: relative;
+    &__img-absolute {
+        position: absolute;
+        z-index: 5;
+        top: 140px;
+        left: -87px;
+        transform: rotate(180deg);
+    }
+    &__img-absolute2 {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: -100px;
+    }
+    &__img-absolute3 {
+        position: absolute;
+        z-index: 6;
+        left: 0;
+        bottom: 0;
+    }
+    &__img-absolute4 {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        bottom: 0;
+        transform: rotate(180deg);
+    }
+    &__img-absolute5 {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        bottom: 0;
+    }
+    &__title {
+        color: #00aeef;
+    }
+    &__content {
+        padding: 30px;
+        margin-top: 45px;
+        box-shadow: 0px 6px 4px 1px rgba(0, 0, 0, 0.18);
+        position: relative;
+        background-color: #ffffff;
+        &::after {
+            content: '';
+            position: absolute;
+            left: -10000px;
+            top: 0;
+            width: calc(100% + 10000px);
+            height: 100%;
+            background-color: #ffffff;
+        }
+        &-top {
+            display: flex;
+            position: relative;
+            z-index: 2;
+        }
+        &-bottom {
+            position: relative;
+            z-index: 2;
+        }
+        &-right {
+            width: 525px;
+            margin-left: 25px;
+        }
+        &-left {
+            width: calc(100% - 550px);
+        }
+        &-img {
+            position: relative;
+            .skiing__img {
+                width: 100%;
+            }
+            .skiing__number {
+                position: absolute;
+                left: -15px;
+                top: -25px;
+            }
+            .skiing__img2 {
+                position: absolute;
+                top: -25px;
+                right: 20px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &__desc {
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                font-weight: 700;
+                font-style: italic;
+                margin-top: 15px;
+            }
+        }
+    }
+    &__content-bottom {
+        margin-top: 30px;
+    }
+    &__bottom-desc {
+        padding-bottom: 30px;
+        p {
+            font-size: 24px;
+            line-height: 1.2;
+            &:not(:first-child) {
+                margin-top: 15px;
+            }
+        }
+    }
+    &__bottom-text--bold {
+        font-weight: 700;
+        font-style: italic;
+    }
+    &__literature {
+        font-size: 18px;
+        line-height: 1.2;
+        padding-top: 30px;
+        border-top: 2px solid #00dfff;
+    }
+}
+
+@media screen and (max-width: 4000px) {
+    .method {
+        &__right {
+            &::after {
+                right: -2000px;
+                width: calc(100% + 2000px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 3000px) {
+    .method {
+        &__right {
+            &::after {
+                right: -1000px;
+                width: calc(100% + 1000px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .method {
+        &__right {
+            &::after {
+                right: -500px;
+                width: calc(100% + 500px);
+            }
+        }
+    }
+    .workout {
+        &__img1 {
+            left: -100px;
+        }
+        &__img6 {
+            right: -100px;
+        }
+    }
+    .athletics {
+        &__img-absolute {
+            left: -100px;
+        }
+    }
+    .all-around {
+        &__img-absolute {
+            left: -100px;
+        }
+    }
+    .swimming {
+        &__img-absolute {
+            left: -187px;
+        }
+        &__img-absolute3 {
+            display: none;
+        }
+        &__img-absolute4 {
+            display: none;
+        }
+    }
+    .mountaineering {
+        &__img-absolute {
+            left: -100px;
+        }
+        &__img-absolute2 {
+            left: -50px;
+        }
+        &__img-absolute3 {
+            left: -50px;
+        }
+    }
+    .skiing {
+        &__img-absolute {
+            left: -187px;
+        }
+        &__img-absolute5 {
+            right: -200px;
+        }
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .new-methods {
+        &__right {
+            display: block;
+            padding: 30px 30px 50px;
+        }
+        &__wada {
+            max-width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+            position: unset;
+            top: unset;
+            transform: unset;
+            left: unset;
+            margin-top: 50px;
+            &-inner {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1850px) {
+    .new-methods {
+        &__img1,
+        &__img2 {
+            display: none;
+        }
+        &__arrow {
+            &::after {
+                right: 340px;
+            }
+            img {
+                right: -150px;
+            }
+        }
+        &__nobel {
+            width: 250px;
+            height: 250px;
+            bottom: -75px;
+        }
+    }
+    .workout {
+        &__img1 {
+            display: none;
+        }
+        &__img6 {
+            display: none;
+        }
+    }
+    .athletics {
+        &__img-absolute {
+            display: none;
+        }
+    }
+    .all-around {
+        &__img-absolute {
+            display: none;
+        }
+        &__img-absolute2 {
+            display: none;
+        }
+    }
+    .swimming {
+        &__img-absolute {
+            display: none;
+        }
+        &__img-absolute2 {
+            display: none;
+        }
+    }
+    .mountaineering {
+        &__img-absolute {
+            display: none;
+        }
+        &__img-absolute2 {
+            display: none;
+        }
+        &__img-absolute3 {
+            display: none;
+        }
+    }
+    .skiing {
+        &__img-absolute {
+            display: none;
+        }
+        &__img-absolute2 {
+            display: none;
+        }
+        &__img-absolute3 {
+            display: none;
+        }
+        &__img-absolute4 {
+            display: none;
+        }
+        &__img-absolute5 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1690px) {
+    .method {
+        &__img1 {
+            width: 100px;
+            height: 100px;
+        }
+        &__img2 {
+            right: -200px;
+            height: 100px;
+        }
+    }
+    .new-methods {
+        &__inner {
+            &-top {
+                padding: 0 30px;
+                grid-template-columns: 1fr;
+            }
+        }
+        &__img {
+            max-width: 1270px;
+            width: 100%;
+            margin-right: auto;
+        }
+        &__right {
+            max-width: 1270px;
+            padding: 30px 30px 50px;
+            margin-right: auto;
+            margin-left: auto;
+            &-content {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 100%;
+            }
+        }
+        &__title {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+    .new-methods {
+        &__nobel {
+            width: 150px;
+            height: 150px;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .method {
+        &__inner {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            background-image: url(../img/method-_1_.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #dce1e8;
+            padding: 30px;
+            height: 100%;
+            &::after {
+                display: none;
+            }
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .new-methods {
+        &__arrow {
+            &::after {
+                right: 150px;
+            }
+            img {
+                right: -300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .method {
+        &__img2 {
+            right: -300px;
+        }
+    }
+    .new-methods {
+        &__arrow {
+            &::after {
+                font-size: 18px;
+                right: 155px;
+            }
+            img {
+                right: -410px;
+                height: 80px;
+                width: 850px;
+                bottom: 27px;
+            }
+        }
+        &__bottom {
+            &-title {
+                max-width: 330px;
+                font-size: 25px;
+            }
+        }
+    }
+    .athletics,
+    .all-around,
+    .swimming,
+    .mountaineering,
+    .skiing {
+        &__content {
+            padding: 15px;
+            &-top {
+                display: block;
+            }
+            &-left {
+                width: 100%;
+            }
+            &-right {
+                width: 100%;
+                margin-top: 30px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .method {
+        &__img1 {
+            width: 70px;
+            height: 70px;
+            top: 100px;
+        }
+        &__img2 {
+            height: 60px;
+            right: -150px;
+            top: 105px;
+        }
+    }
+    .new-methods {
+        &__arrow {
+            &::after {
+                font-size: 16px;
+                bottom: 52px;
+                right: 112px;
+            }
+            img {
+                right: -480px;
+                bottom: 30px;
+                height: 60px;
+            }
+        }
+        &__nobel {
+            width: 100px;
+            height: 100px;
+            bottom: 15px;
+        }
+        &__bottom {
+            &-title {
+                font-size: 20px;
+            }
+        }
+    }
+    .physiology {
+        &__items {
+            display: block;
+            margin-top: 15px;
+        }
+        &__item {
+            width: 100%;
+            padding: 10px;
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            &-img {
+                max-width: 300px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    .workout {
+        padding: 30px 0;
+        &__img3 {
+            display: none;
+        }
+        &__desc {
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .method {
+        &__img1,
+        &__img2 {
+            display: none;
+        }
+    }
+    .new-methods {
+        &__bottom-title {
+            max-width: 150px;
+        }
+        &__arrow {
+            img {
+                bottom: 40px;
+                right: -483px;
+            }
+            &::after {
+                bottom: 60px;
+                font-size: 16px;
+                right: 103px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .method {
+        &__left {
+            padding: 15px;
+            &-title {
+                padding-bottom: 15px;
+            }
+        }
+        &__right {
+            padding: 15px 15px 50px;
+        }
+        &__desc {
+            margin-top: 15px;
+            p {
+                font-size: 16px;
+                &:not(:first-child) {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .new-methods {
+        padding: 30px 0;
+        &__arrow {
+            &::after {
+                display: none;
+            }
+            img {
+                right: -670px;
+                bottom: 45px;
+                height: 25px;
+            }
+        }
+        &__nobel {
+            width: 50px;
+            height: 50px;
+            bottom: 35px;
+        }
+        &__inner-top {
+            gap: 20px;
+        }
+        &__title {
+            padding-bottom: 15px;
+        }
+        &__desc {
+            margin-top: 15px;
+            p {
+                font-size: 16px;
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+        }
+        &__wada {
+            margin-top: 30px;
+            max-width: 300px;
+            &-inner {
+                padding: 15px;
+            }
+            &-title {
+                font-size: 18px;
+            }
+            &-desc {
+                img {
+                    width: 50px;
+                    height: 70px;
+                }
+            }
+            &-text {
+                font-size: 16px;
+                max-width: 250px;
+            }
+        }
+    }
+    .physiology {
+        &__title {
+            font-size: 16px;
+        }
+        &__text {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        &__item {
+            &-title {
+                font-size: 18px;
+            }
+            &-text {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+        &__link {
+            font-size: 18px;
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+    .workout {
+        &__desc {
+            margin-top: 15px;
+            padding: 15px;
+            &-top {
+                padding-bottom: 15px;
+                p {
+                    font-size: 16px;
+                    &:not(:first-child) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        &__nav {
+            margin-top: 15px;
+            padding-bottom: 15px;
+            &-title {
+                font-size: 18px;
+            }
+        }
+        &__list {
+            margin-top: 30px;
+            li {
+                font-size: 16px;
+                padding-left: 30px;
+            }
+        }
+        &__desc-bottom {
+            margin-top: 15px;
+            p {
+                font-size: 16px;
+            }
+        }
+        &__title-two {
+            margin-top: 15px;
+        }
+    }
+    .athletics,
+    .all-around,
+    .swimming,
+    .mountaineering,
+    .skiing {
+        padding: 30px 0 0;
+        &__img2 {
+            display: none;
+        }
+        .athletics__number {
+            width: 40px;
+            height: 80px;
+            left: 0;
+        }
+        &__content {
+            margin-top: 30px;
+            &-bottom {
+                margin-top: 15px;
+            }
+        }
+        &__desc {
+            p {
+                font-size: 16px;
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+        }
+        &__literature {
+            font-size: 16px;
+            padding-top: 15px;
+        }
+        &__bottom-desc {
+            padding-bottom: 15px;
+            p {
+                font-size: 16px;
+            }
+        }
+        &__nav {
+            padding-bottom: 15px;
+            &-title {
+                font-size: 18px;
+            }
+        }
+        &__list {
+            margin-top: 15px;
+            li {
+                font-size: 14px;
+                padding-left: 20px;
+                &:after {
+                    top: 3px;
+                }
+            }
+        }
+    }
+}

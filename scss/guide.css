@@ -1,0 +1,1384 @@
+.guide {
+  background-image: url(../img/guide2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .guide__img1 {
+    position: absolute;
+    left: -63px;
+    top: 100px; }
+  .guide__img2 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0; }
+  .guide__img3 {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .guide__title {
+    margin-top: 15px;
+    color: #ffffff; }
+  .guide__content {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2; }
+    .guide__content-title {
+      color: #222931;
+      max-width: 825px; }
+  .guide__subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 40px;
+    border-bottom: 2px solid #00dfff;
+    padding-bottom: 40px; }
+  .guide__nav {
+    margin-top: 40px; }
+    .guide__nav-title {
+      font-size: 24px;
+      line-height: 1.2; }
+  .guide__list {
+    margin-top: 30px; }
+    .guide__list li {
+      padding-left: 52px;
+      position: relative;
+      font-size: 24px;
+      line-height: 120%;
+      color: #222931; }
+      .guide__list li:not(:first-child) {
+        margin-top: 15px; }
+      .guide__list li::after {
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        top: 7px;
+        left: 0;
+        background-color: #5fd9ef;
+        border-radius: 50%; }
+
+.info {
+  padding-top: 50px;
+  position: relative;
+  z-index: 6; }
+  .info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/info_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4; }
+  .info__img1 {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: -90px;
+    transform: rotate(180deg); }
+  .info__img2 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    bottom: -250px; }
+  .info__inner {
+    position: relative;
+    z-index: 5; }
+  .info__title {
+    text-align: end;
+    color: #ffffff; }
+    .info__title span {
+      color: #ff0066; }
+  .info__subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 75px;
+    margin-top: 30px;
+    max-width: 800px; }
+  .info__table {
+    margin-top: 40px;
+    position: relative; }
+    .info__table-img {
+      position: absolute;
+      z-index: 2;
+      top: -145px;
+      left: 50px; }
+    .info__table-img2 {
+      position: absolute;
+      top: 190px;
+      left: -360px; }
+    .info__table-content {
+      overflow-x: auto; }
+      .info__table-content::-webkit-scrollbar {
+        width: 3px;
+        height: 20px; }
+      .info__table-content::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.4); }
+      .info__table-content::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 15px; }
+      .info__table-content table {
+        text-align: center;
+        width: 100%;
+        overflow-x: auto; }
+      .info__table-content thead {
+        background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+        .info__table-content thead th {
+          font-family: 'Roboto';
+          font-size: 24px;
+          line-height: 24px;
+          font-weight: 700;
+          color: #ffffff;
+          padding: 20px 10px; }
+          .info__table-content thead th:nth-child(1) {
+            padding-left: 400px; }
+      .info__table-content tbody {
+        background-color: #ffffff; }
+        .info__table-content tbody td {
+          font-family: Roboto;
+          font-size: 22px;
+          height: 60px;
+          line-height: 120%; }
+        .info__table-content tbody tr:not(:first-child) {
+          border-top: 1px solid #00dfff; }
+        .info__table-content tbody tr td:nth-child(1) {
+          padding-left: 385px; }
+  .info__desc {
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-top: 30px;
+    max-width: 780px;
+    margin-left: 400px; }
+  .info__inner-bottom {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 5; }
+  .info__bottom-left {
+    width: 700px;
+    background: linear-gradient(180deg, #addbf1 0%, #e6e6e6 100%);
+    box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+    padding: 30px 140px 30px 70px; }
+  .info__bottom-right {
+    position: relative; }
+    .info__bottom-right::after {
+      content: '';
+      position: absolute;
+      width: calc(100% + 3000px);
+      height: 100%;
+      top: 0;
+      right: -3000px;
+      background-image: url(../img/method-_1_.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+    .info__bottom-right::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -3000px;
+      width: calc(100% + 3000px);
+      height: 100%;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.05); }
+  .info__bottom-subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    margin-top: 60px; }
+  .info__bottom-desc {
+    margin-top: 20px; }
+    .info__bottom-desc p {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-style: normal;
+      color: #000000; }
+      .info__bottom-desc p:not(:first-child) {
+        margin-top: 20px; }
+  .info__bottom-nav {
+    margin-top: 20px; }
+  .info__left-text {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2; }
+  .info__right-img img {
+    position: absolute;
+    z-index: 3;
+    top: 64px;
+    left: -188px; }
+  .info__right-img div {
+    position: absolute;
+    z-index: 2;
+    bottom: 285px;
+    right: 115px;
+    width: 300px;
+    height: 95px; }
+  .info__right-img span:nth-child(1) {
+    display: block;
+    background-color: rgba(255, 0, 102, 0.9);
+    width: 100%;
+    height: 100%; }
+  .info__right-img span:nth-child(2) {
+    display: block;
+    background-color: rgba(255, 0, 102, 0.9);
+    width: 100%;
+    height: 100%;
+    margin-top: 5px; }
+  .info__right-img span:nth-child(3) {
+    display: block;
+    background-color: rgba(255, 0, 102, 0.9);
+    width: 100%;
+    height: 100%;
+    margin-top: 5px; }
+  .info__right-content {
+    position: relative;
+    z-index: 5;
+    padding: 60px 30px 80px 250px; }
+  .info__oxygen-items {
+    max-width: 150px;
+    position: relative;
+    margin-left: 50px; }
+    .info__oxygen-items::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      width: 19px;
+      height: 100%;
+      transform: translateX(-50%);
+      background: linear-gradient(0deg, #51d5ee 0%, #ff0066 100%);
+      box-shadow: inset 0px 1px 8px 0px rgba(0, 0, 0, 0.34);
+      border-radius: 5px; }
+  .info__oxygen-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #00aeef;
+    font-size: 18px;
+    line-height: 64px;
+    font-weight: 500;
+    position: relative;
+    z-index: 2; }
+    .info__oxygen-item span:nth-child(1) {
+      margin-right: 50px; }
+  .info__nav-title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic; }
+  .info__list {
+    margin-top: 20px; }
+    .info__list li {
+      font-size: 24px;
+      font-weight: 400;
+      text-decoration: underline;
+      color: #ff0066;
+      padding-left: 35px;
+      position: relative; }
+      .info__list li::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 11px;
+        height: 11px;
+        background-color: #5fd9ef;
+        border-radius: 50%; }
+      .info__list li:not(:first-child) {
+        margin-top: 20px; }
+  .info__left-img img {
+    position: absolute;
+    left: -50px;
+    bottom: 370px; }
+
+.device {
+  background-image: url(../img/construction_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  padding: 70px 0 0;
+  font-family: 'Roboto'; }
+  .device::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/device_bg2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3; }
+  .device__img1 {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    transform: rotate(90deg); }
+  .device__img2 {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    transform: rotate(180deg); }
+  .device__img3 {
+    position: absolute;
+    right: 0;
+    bottom: -200px; }
+  .device__img4 {
+    position: absolute;
+    left: 0;
+    bottom: -200px; }
+  .device__img5 {
+    position: absolute;
+    top: 15px;
+    right: -200px; }
+  .device__title {
+    color: #ffffff;
+    text-align: end; }
+    .device__title span {
+      color: #ff0066; }
+  .device__inner {
+    position: relative;
+    z-index: 2; }
+    .device__inner-top {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin-top: 66px; }
+    .device__inner-bottom {
+      background: linear-gradient(180deg, #addbf1 0%, #e6e6e6 100%);
+      box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+      padding: 30px; }
+  .device__top-left {
+    width: calc(100% - 640px); }
+  .device__top-right {
+    width: 610px;
+    margin-left: 30px; }
+  .device__top-list li {
+    display: flex;
+    align-items: center; }
+    .device__top-list li:not(:first-child) {
+      margin-top: 15px; }
+    .device__top-list li span:nth-child(1) {
+      font-size: 17.9px;
+      line-height: 34px;
+      font-weight: 700;
+      font-style: italic;
+      color: #ffffff;
+      background-color: #ff0066;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0; }
+  .device__top-list span:nth-child(2) {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #222931;
+    margin-left: 25px; }
+  .device__left-img img {
+    width: 100%; }
+  .device__bottom-list li {
+    font-size: 24px;
+    line-height: 160%;
+    position: relative;
+    padding-left: 45px; }
+    .device__bottom-list li:not(:first-child) {
+      margin-top: 15px; }
+    .device__bottom-list li::after {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      top: 5px;
+      left: 0;
+      background-color: #5fd9ef;
+      border-radius: 50%; }
+
+.video-manual {
+  padding: 30px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 5; }
+  .video-manual__img {
+    position: absolute;
+    top: -20px;
+    right: 0; }
+  .video-manual__inner {
+    text-align: center; }
+  .video-manual .video {
+    position: relative;
+    width: 770px;
+    height: 405px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-top: 30px; }
+  .video-manual iframe,
+  .video-manual img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border: none; }
+  .video-manual .btn-reset {
+    border: none;
+    background: transparent;
+    cursor: pointer; }
+  .video-manual .video-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .video-manual .video-play-shape {
+    fill: #212121;
+    fill-opacity: 0.8; }
+  .video-manual .video-play-icon {
+    fill: #ffffff; }
+  .video-manual .video-play:focus {
+    outline: none; }
+  .video-manual .video:hover .video-play-shape,
+  .video-manual .video:focus .video-play-shape {
+    fill: #ff0000;
+    fill-opacity: 1; }
+
+.training-methods {
+  background: linear-gradient(180deg, #addbf1 0%, #e6e6e6 100%);
+  box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+  position: relative; }
+  .training-methods__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; }
+  .training-methods__title-block {
+    background-color: rgba(34, 41, 49, 0.8);
+    padding: 50px 0;
+    position: relative; }
+  .training-methods__title {
+    color: #ffffff; }
+    .training-methods__title span {
+      color: #ff0066; }
+  .training-methods__img {
+    position: absolute;
+    top: 0;
+    left: -20px; }
+  .training-methods__desc {
+    margin-top: 40px; }
+    .training-methods__desc p {
+      font-size: 24px;
+      line-height: 1.2; }
+      .training-methods__desc p:first-child {
+        font-style: italic;
+        font-weight: 700; }
+      .training-methods__desc p:not(:first-child) {
+        margin-top: 20px; }
+  .training-methods__items {
+    position: relative; }
+  .training-methods__item {
+    width: calc(50% + 635px);
+    box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+    background-color: #ffffff;
+    min-height: 700px;
+    position: relative;
+    margin-top: 40px; }
+    .training-methods__item-two {
+      min-height: 585px; }
+    .training-methods__item-title {
+      font-size: 36.6px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 50px; }
+    .training-methods__item-img {
+      position: relative; }
+    .training-methods__item-img1 {
+      position: absolute;
+      top: 35px;
+      left: -170px; }
+    .training-methods__item-img2 {
+      position: absolute;
+      top: 0;
+      left: -25px; }
+    .training-methods__item-desc {
+      margin-top: 85px; }
+    .training-methods__item-subtitle {
+      font-size: 24px;
+      line-height: 120%;
+      font-style: italic;
+      font-weight: 700; }
+    .training-methods__item-text {
+      font-size: 24px;
+      line-height: 120%; }
+      .training-methods__item-text:not(:first-child) {
+        margin-top: 50px; }
+      .training-methods__item-text--bold {
+        font-style: italic;
+        font-weight: 700;
+        position: relative; }
+        .training-methods__item-text--bold::after {
+          content: '';
+          position: absolute;
+          top: -25px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          border-top: 1px solid #00aeef; }
+    .training-methods__item-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2; }
+  .training-methods__content-inner {
+    margin-left: auto;
+    padding: 30px 30px 30px 80px;
+    position: relative; }
+  .training-methods__info {
+    position: relative;
+    z-index: 3;
+    padding: 60px 0 50px; }
+    .training-methods__info-img {
+      position: absolute;
+      top: 5px;
+      left: 0; }
+    .training-methods__info-img2 {
+      position: absolute;
+      right: 0;
+      bottom: 10px; }
+    .training-methods__info-content {
+      position: relative;
+      z-index: 3;
+      padding: 0 30px; }
+    .training-methods__info-list {
+      margin-top: 60px; }
+      .training-methods__info-list li {
+        font-size: 24px;
+        line-height: 120%;
+        padding-left: 32px;
+        position: relative; }
+        .training-methods__info-list li::after {
+          content: '';
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          top: 5px;
+          left: 0;
+          background-color: #5fd9ef;
+          border-radius: 50%; }
+        .training-methods__info-list li:not(:first-child) {
+          margin-top: 20px; }
+    .training-methods__info-desc {
+      margin-left: auto;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-top: 40px;
+      font-weight: 700;
+      font-style: italic;
+      max-width: 570px;
+      color: #ffffff; }
+  .training-methods__nav-title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff; }
+  .training-methods__table2 {
+    position: relative;
+    padding: 0 0 40px;
+    font-family: 'Roboto'; }
+    .training-methods__table2-inner {
+      position: relative;
+      background-color: #ffffff;
+      box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+      padding-bottom: 25px; }
+      .training-methods__table2-inner::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 77px;
+        left: 0;
+        top: 0;
+        background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+    .training-methods__table2-content {
+      overflow-y: auto; }
+      .training-methods__table2-content::-webkit-scrollbar {
+        width: 3px;
+        height: 20px; }
+      .training-methods__table2-content::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.4); }
+      .training-methods__table2-content::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 15px; }
+    .training-methods__table2-img1 {
+      position: absolute;
+      z-index: 3;
+      top: -200px;
+      right: 0; }
+    .training-methods__table2-img2 {
+      position: absolute;
+      z-index: 2;
+      top: -150px;
+      right: -80px; }
+    .training-methods__table2-text {
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+      position: relative;
+      z-index: 4; }
+    .training-methods__table2-link {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ff0066;
+      display: block;
+      margin-top: 60px; }
+      .training-methods__table2-link span:nth-child(1) {
+        color: #000000; }
+      .training-methods__table2-link span:nth-child(2) {
+        color: #ff0066;
+        text-decoration: underline; }
+        .training-methods__table2-link span:nth-child(2):hover {
+          color: #00aeef; }
+    .training-methods__table2 table {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 5; }
+    .training-methods__table2 thead {
+      height: 77px; }
+      .training-methods__table2 thead th {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 20px 10px; }
+    .training-methods__table2 tbody td {
+      font-size: 22px;
+      line-height: 120%;
+      height: 60px; }
+    .training-methods__table2 tbody tr {
+      border-bottom: 1px solid #00dfff; }
+  .training-methods__table {
+    position: relative;
+    font-family: 'Roboto';
+    background-color: #ffffff;
+    box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+    padding-bottom: 25px; }
+    .training-methods__table::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      left: 0;
+      top: 0;
+      background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+    .training-methods__table-content {
+      overflow-y: auto; }
+      .training-methods__table-content::-webkit-scrollbar {
+        width: 3px;
+        height: 20px; }
+      .training-methods__table-content::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.4); }
+      .training-methods__table-content::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 15px; }
+    .training-methods__table-img1 {
+      position: absolute;
+      z-index: 2;
+      left: 80px;
+      bottom: 30px; }
+    .training-methods__table-img2 {
+      position: absolute;
+      left: 0;
+      bottom: -150px; }
+    .training-methods__table-text {
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+      position: relative;
+      z-index: 4; }
+    .training-methods__table table {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 5; }
+    .training-methods__table thead {
+      height: 100px; }
+      .training-methods__table thead th {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 20px 10px; }
+    .training-methods__table tbody td {
+      font-size: 22px;
+      line-height: 120%;
+      height: 60px; }
+    .training-methods__table tbody tr {
+      border-bottom: 1px solid #00dfff; }
+  .training-methods__information {
+    position: relative;
+    z-index: 5;
+    padding: 40px 0; }
+    .training-methods__information-content {
+      position: relative;
+      z-index: 5;
+      padding: 0 30px; }
+    .training-methods__information-desc p {
+      font-size: 24px;
+      line-height: 120%; }
+      .training-methods__information-desc p span {
+        font-weight: 700;
+        font-style: italic; }
+      .training-methods__information-desc p:not(:first-child) {
+        margin-top: 20px; }
+      .training-methods__information-desc p:last-child {
+        font-weight: 700;
+        font-style: italic; }
+
+.trainings {
+  font-family: 'Roboto';
+  padding-bottom: 30px;
+  position: relative;
+  background: linear-gradient(180deg, #addbf1 0%, #e6e6e6 100%);
+  box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18); }
+  .trainings__title-block {
+    margin-top: 0;
+    background-image: url(../img/construction_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; }
+  .trainings__img {
+    left: 0; }
+  .trainings__img1 {
+    position: absolute;
+    z-index: 2;
+    top: 830px;
+    right: 0; }
+  .trainings__img2 {
+    position: absolute;
+    z-index: 2;
+    left: -30px;
+    bottom: -200px; }
+  .trainings__title {
+    text-align: center; }
+    .trainings__title span {
+      color: #ff0066; }
+  .trainings__subtitle {
+    margin: 30px 0;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Ubuntu'; }
+  .trainings__nav {
+    margin-top: 30px; }
+    .trainings__nav-title {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+      font-style: italic; }
+  .trainings__list {
+    margin-top: 30px; }
+    .trainings__list li {
+      padding-left: 30px;
+      position: relative;
+      font-size: 24px;
+      line-height: 120%;
+      text-decoration: underline;
+      color: #ff0066; }
+      .trainings__list li::after {
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        left: 0;
+        top: 5px;
+        background-color: #00aeef;
+        border-radius: 50%; }
+  .trainings__table {
+    background-color: #ffffff;
+    box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+    position: relative; }
+    .trainings__table::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+    .trainings__table-content {
+      overflow-y: auto; }
+      .trainings__table-content::-webkit-scrollbar {
+        width: 3px;
+        height: 20px; }
+      .trainings__table-content::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.4); }
+      .trainings__table-content::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 15px; }
+      .trainings__table-content table {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 5; }
+      .trainings__table-content thead th {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #ffffff;
+        padding: 20px 10px; }
+      .trainings__table-content tbody td {
+        font-size: 22px;
+        line-height: 120%;
+        height: 60px; }
+      .trainings__table-content tbody tr {
+        border-bottom: 1px solid #00dfff; }
+  .trainings__table--two {
+    background-color: #ffffff;
+    box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18);
+    position: relative; }
+    .trainings__table--two::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+  .trainings__table-content--two {
+    overflow-y: auto; }
+    .trainings__table-content--two::-webkit-scrollbar {
+      width: 3px;
+      height: 20px; }
+    .trainings__table-content--two::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.4); }
+    .trainings__table-content--two::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 15px; }
+    .trainings__table-content--two table {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 5; }
+    .trainings__table-content--two thead th {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffffff;
+      padding: 20px 10px; }
+    .trainings__table-content--two tbody td {
+      font-size: 22px;
+      line-height: 120%;
+      height: 60px; }
+    .trainings__table-content--two tbody tr {
+      border-bottom: 1px solid #00dfff; }
+
+@media screen and (max-width: 4500px) {
+  .info__bottom-right::after {
+    right: -2000px;
+    width: calc(100% + 2000px); } }
+@media screen and (max-width: 3000px) {
+  .info__bottom-right::after {
+    right: -1000px;
+    width: calc(100% + 1000px); } }
+@media screen and (max-width: 2000px) {
+  .info__bottom-right::after {
+    right: -500px;
+    width: calc(100% + 500px); }
+
+  .device__img5 {
+    right: -300px; }
+
+  .training-methods__img {
+    left: -120px; } }
+@media screen and (max-width: 1850px) {
+  .guide__img1 {
+    left: -150px; }
+
+  .info__img1 {
+    right: -200px; }
+  .info__img2 {
+    display: none; }
+
+  .device__title {
+    text-align: center; }
+
+  .video-manual__img {
+    right: -200px; }
+
+  .training-methods__title {
+    text-align: center; }
+  .training-methods__table-img1, .training-methods__table-img2, .training-methods__table2-img1, .training-methods__table2-img2 {
+    display: none; }
+
+  .trainings__img {
+    left: -300px; }
+  .trainings__img1, .trainings__img2 {
+    display: none; } }
+@media screen and (max-width: 1650px) {
+  .guide__img1 {
+    display: none; }
+
+  .info__img1 {
+    right: -200px; }
+  .info__title {
+    text-align: center; }
+
+  .training-methods__item-img1 {
+    left: -250px; }
+  .training-methods__item-img2 {
+    left: -10px; } }
+@media screen and (max-width: 1450px) {
+  .info__inner-bottom {
+    grid-template-columns: 1fr; }
+  .info__bottom-left {
+    width: 100%;
+    padding: 30px; }
+  .info__bottom-right {
+    background-image: url(../img/method-_1_.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #dce1e8;
+    box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.05);
+    height: 100%; }
+    .info__bottom-right::after {
+      display: none; }
+    .info__bottom-right::before {
+      display: none; }
+  .info__left-text {
+    color: #000000;
+    margin-top: 30px; }
+  .info__bottom-subtitle {
+    margin-top: 30px; }
+  .info__left-img {
+    display: none; }
+  .info__right-img img {
+    top: 60px; }
+  .info__right-img div {
+    right: unset;
+    left: 153px;
+    bottom: 260px; }
+
+  .device__inner-top {
+    display: block; }
+  .device__top-left {
+    width: 100%; }
+  .device__top-right {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0; }
+
+  .video-manual__img {
+    right: -370px; }
+
+  .training-methods__image {
+    display: none; }
+  .training-methods__img {
+    left: -180px; }
+  .training-methods__content-inner {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: -2px 6px 4px 1px rgba(0, 0, 0, 0.18); }
+    .training-methods__content-inner::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 50px);
+      top: 50px;
+      left: 0;
+      background-image: url(../img/arrow10.png);
+      background-repeat: no-repeat;
+      background-size: 400px 100px; }
+    .training-methods__content-inner::before {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: calc(100% + 50px);
+      top: 25px;
+      left: 150px;
+      background-image: url(../img/1.png);
+      background-repeat: no-repeat;
+      background-size: 40px 60px; }
+    .training-methods__content-inner--two::before {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: calc(100% + 50px);
+      top: 25px;
+      left: 150px;
+      background-image: url(../img/2.2.png);
+      background-repeat: no-repeat;
+      background-size: 40px 60px; }
+  .training-methods__item {
+    display: none; }
+    .training-methods__item-content {
+      position: relative;
+      margin-top: 40px; }
+    .training-methods__item-img2 {
+      display: none; }
+    .training-methods__item-title {
+      position: relative;
+      z-index: 5; }
+    .training-methods__item-desc {
+      margin-top: 60px; }
+    .training-methods__item-text:not(:first-child) {
+      margin-top: 30px; }
+    .training-methods__item-text--bold::after {
+      top: -15px; }
+  .training-methods__info-img {
+    height: 100px;
+    left: -100px;
+    top: 22px; }
+  .training-methods__info-img2 {
+    height: 135px;
+    width: 700px;
+    bottom: 15px; }
+  .training-methods__table-img1, .training-methods__table-img2 {
+    display: none; }
+  .training-methods__table2-img1, .training-methods__table2-img2 {
+    display: none; }
+
+  .trainings__img {
+    left: -480px; }
+  .trainings__table .container, .trainings__table--two .container {
+    padding: 0; }
+  .trainings__table::after, .trainings__table--two::after {
+    display: none; }
+  .trainings__table table thead, .trainings__table--two table thead {
+    background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+  .trainings__table table th, .trainings__table--two table th {
+    padding: 15px; }
+  .trainings__table table td, .trainings__table--two table td {
+    padding: 0 15px; } }
+@media screen and (max-width: 1250px) {
+  .info__subtitle {
+    max-width: 100%;
+    text-align: center;
+    margin-right: 0; }
+  .info__desc {
+    max-width: 100%;
+    margin-left: 0; }
+  .info__table-img {
+    display: none; }
+  .info__table-img2 {
+    display: none; }
+  .info__table thead th:nth-child(1) {
+    padding-left: 0; }
+  .info__table thead th {
+    padding: 20px 30px !important; }
+  .info__table tbody tr td:nth-child(1) {
+    padding-left: 0; }
+
+  .device__img2 {
+    display: none; }
+  .device__title {
+    text-align: start; }
+
+  .video-manual__img {
+    right: -430px; }
+
+  .training-methods__item-img {
+    left: -400px; }
+  .training-methods__item-img2 {
+    top: -60px; } }
+@media screen and (max-width: 992px) {
+  .guide__content {
+    padding: 15px; }
+
+  .info__img1 {
+    height: 60px;
+    top: 40px;
+    right: -20px; }
+  .info__subtitle {
+    max-width: 100%;
+    text-align: center; }
+
+  .device__inner-top {
+    padding: 15px; }
+  .device__inner-bottom {
+    padding: 15px; }
+  .device__img5 {
+    height: 60px;
+    top: 62px;
+    right: -100px; }
+
+  .video-manual__img {
+    display: none; }
+  .video-manual .video {
+    width: 100%;
+    height: 100%; }
+
+  .training-methods__img {
+    display: none; }
+  .training-methods__table .container, .training-methods__table2 .container {
+    padding: 0; }
+  .training-methods__table::after, .training-methods__table2::after {
+    display: none; }
+  .training-methods__table-inner::after, .training-methods__table2-inner::after {
+    display: none; }
+  .training-methods__table table td, .training-methods__table2 table td {
+    padding: 0 15px; }
+  .training-methods__table thead, .training-methods__table2 thead {
+    background: linear-gradient(90deg, #5fd9ef 0%, #00aeef 100%); }
+  .training-methods__table-text, .training-methods__table2-text {
+    padding: 0 15px; }
+
+  .trainings__img {
+    display: none; }
+  .trainings__img1 {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .info__img {
+    display: none !important; }
+  .info__img1 {
+    display: none; }
+
+  .device__title {
+    text-align: center; }
+  .device__img5 {
+    display: none; }
+
+  .training-methods__info-img {
+    left: -300px; }
+  .training-methods__info-img2 {
+    height: 98px;
+    width: 660px;
+    bottom: 25px; }
+  .training-methods__info-desc {
+    font-size: 20px; } }
+@media screen and (max-width: 576px) {
+  .guide__subtitle {
+    font-size: 18px;
+    margin-top: 15px;
+    padding-bottom: 15px; }
+  .guide__nav {
+    margin-top: 16px; }
+    .guide__nav-title {
+      font-size: 18px; }
+  .guide__list {
+    margin-top: 15px; }
+    .guide__list li {
+      font-size: 16px;
+      padding-left: 30px; }
+      .guide__list li::after {
+        top: 0; }
+      .guide__list li:not(:first-child) {
+        margin-top: 10px; }
+
+  .info {
+    padding: 30px 0 0; }
+    .info__subtitle {
+      margin-top: 15px;
+      font-size: 18px; }
+    .info__table {
+      margin-top: 15px; }
+      .info__table-content thead th {
+        font-size: 18px;
+        padding: 20px !important; }
+      .info__table-content tbody td {
+        font-size: 16px;
+        height: 50px; }
+    .info__desc {
+      font-size: 16px;
+      margin-top: 15px; }
+    .info__bottom-subtitle {
+      font-size: 18px; }
+    .info__bottom-desc {
+      margin-top: 15px; }
+      .info__bottom-desc p {
+        font-size: 16px; }
+        .info__bottom-desc p:not(:first-child) {
+          margin-top: 10px; }
+    .info__bottom-nav {
+      margin-top: 15px; }
+    .info__nav-title {
+      font-size: 18px; }
+    .info__list {
+      margin-top: 15px; }
+      .info__list li {
+        font-size: 16px;
+        padding-left: 25px; }
+        .info__list li::after {
+          top: 0; }
+        .info__list li:not(:first-child) {
+          margin-top: 10px; }
+    .info__left-text {
+      font-size: 18px;
+      margin-top: 15px; }
+    .info__bottom-subtitle {
+      margin-top: 1px; }
+    .info__right-img {
+      display: none; }
+    .info__right-content {
+      padding: 30px 15px 50px; }
+    .info__bottom-left {
+      padding: 15px; }
+
+  .device {
+    padding: 30px 0 0; }
+    .device__inner-top {
+      margin-top: 30px; }
+    .device__top-right {
+      margin-top: 15px; }
+    .device__top-list li:not(:first-child) {
+      margin-top: 10px; }
+    .device__top-list li span:nth-child(2) {
+      font-size: 18px; }
+    .device__bottom-list li {
+      padding-left: 30px;
+      font-size: 16px; }
+      .device__bottom-list li:not(:first-child) {
+        margin-top: 10px; }
+      .device__bottom-list li::after {
+        top: 0; }
+
+  .training-methods__title-block {
+    padding: 15px 0; }
+  .training-methods__desc {
+    margin-top: 15px; }
+    .training-methods__desc p {
+      font-size: 16px; }
+      .training-methods__desc p:not(:first-child) {
+        margin-top: 10px; }
+  .training-methods__content-inner {
+    padding: 15px; }
+    .training-methods__content-inner::after {
+      background-size: 200px 50px;
+      top: 15px; }
+    .training-methods__content-inner::before {
+      top: -7px;
+      left: 85px;
+      background-size: 20px 40px; }
+  .training-methods__item-content {
+    margin-top: 15px; }
+  .training-methods__item-title {
+    font-size: 18px;
+    margin-top: 15px; }
+  .training-methods__item-desc {
+    margin-top: 20px; }
+  .training-methods__item-subtitle {
+    font-size: 18px; }
+  .training-methods__item-text {
+    font-size: 16px; }
+    .training-methods__item-text:not(:first-child) {
+      margin-top: 10px; }
+    .training-methods__item-text--bold::after {
+      top: -5px; }
+  .training-methods__info {
+    padding: 0; }
+    .training-methods__info-content {
+      padding: 30px 15px; }
+    .training-methods__info-img {
+      top: 25px;
+      width: 600px;
+      height: 50px; }
+    .training-methods__info-img2 {
+      display: none; }
+    .training-methods__info-list {
+      margin-top: 25px; }
+      .training-methods__info-list li {
+        font-size: 16px;
+        padding-left: 20px; }
+        .training-methods__info-list li::after {
+          top: 3px; }
+        .training-methods__info-list li:not(:first-child) {
+          margin-top: 10px; }
+    .training-methods__info-desc {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #000000; }
+  .training-methods__nav-title {
+    font-size: 18px;
+    padding-top: 10px; }
+  .training-methods__information {
+    padding: 15px 0; }
+    .training-methods__information-content {
+      padding: 0 15px; }
+    .training-methods__information-desc p {
+      font-size: 16px; }
+      .training-methods__information-desc p:not(:first-child) {
+        margin-top: 10px; }
+  .training-methods__table {
+    padding-bottom: 15px; }
+    .training-methods__table-text {
+      font-size: 16px;
+      margin-top: 15px; }
+    .training-methods__table table th {
+      font-size: 18px; }
+    .training-methods__table table td {
+      font-size: 16px;
+      height: 50px; }
+  .training-methods__table2 {
+    padding-bottom: 15px; }
+    .training-methods__table2-inner {
+      padding-bottom: 15px; }
+    .training-methods__table2-text {
+      font-size: 16px;
+      margin-top: 15px; }
+    .training-methods__table2-link {
+      margin-top: 30px; }
+    .training-methods__table2 table th {
+      font-size: 18px; }
+    .training-methods__table2 table td {
+      font-size: 16px;
+      height: 50px; }
+
+  .trainings {
+    padding-bottom: 15px; }
+    .trainings__subtitle {
+      font-size: 20px;
+      margin: 15px 0; }
+    .trainings__nav {
+      margin-top: 15px; }
+      .trainings__nav-title {
+        font-size: 20px; }
+    .trainings__list {
+      margin-top: 15px; }
+      .trainings__list li {
+        font-size: 18px; }
+    .trainings__table table th, .trainings__table--two table th {
+      font-size: 18px; }
+    .trainings__table table td, .trainings__table--two table td {
+      font-size: 16px;
+      height: 50px; } }
+
+/*# sourceMappingURL=guide.css.map */
